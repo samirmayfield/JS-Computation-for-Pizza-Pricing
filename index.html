@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Pizza Drill Demo</title>
+		<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8">
+		<meta content="width=device-width,initial-scale=1.0" name="viewport">
+		<link rel="stylesheet" href="./css/style_pizza.css">
+	</head>
+	<body>
+		<div id="menuBG">
+			<h1 style="margin:0 0px 0 20px;">Pizza Ordering Drill</h1>			
+			<form id="frmMenu">
+			<!-- Pizza size -->
+				<div class="menu left">
+					<h3>Size</h3> 
+					<input class="size" type="radio" name="Size" value="Personal Pizza"> Personal Pizza<span class="moneyFormat">+ $6.00</span>
+					<input class="size" type="radio" name="Size" value="Medium Pizza"> Medium Pizza<span class="moneyFormat">+ $10.00</span>
+					<input class="size" type="radio" name="Size" value="Large Pizza" checked> Large Pizza<span class="moneyFormat">+ $14.00</span>
+					<input class="size" type="radio" name="Size" value="Extra Large Pizza"> Extra Large Pizza<span class="moneyFormat">+ $16.00</span>
+					<br><br><br>
+				</div>
+				<!-- /Pizza size -->
+				<!-- Cheese -->
+				<div class="menu left2">
+					<h3>Cheese</h3>	
+					<input class="cheese" type="radio" name="Cheese" value="Cheese" checked> Cheese<br>
+					<input class="cheese" type="radio" name="Cheese" value="No Cheese"> No Cheese<br>
+					<input class="cheese" type="radio" name="Cheese" value="Extra Cheese"> Extra Cheese
+					<span class="moneyFormat">+ $3.00</span><br><br><br>
+				</div>
+				<!-- /Cheese -->
+				<div class="menu left3">
+					<h3>Sauce</h3>	<!-- Cheese -->
+					<input class="sauce" type="radio" name="Sauce" value="Marinara" checked> Marinara sauce<br>
+					<input class="sauce" type="radio" name="Sauce" value="White">  White sauce<br>
+					<input class="sauce" type="radio" name="Sauce" value="Barbeque"> Barbeque sauce<br>
+					<input class="sauce" type="radio" name="Sauce" value="None"> No sauce<br><br><br>
+				</div>
+				<!-- /Cheese -->
+				<!-- Crust -->
+				<div class="menu left4">
+					<h3>Crust</h3>	
+					<input class="crust" type="radio" name="Crust" value="Plain" checked> Plain Crust<br>
+					<input class="crust" type="radio" name="Crust" value="Garlic">  Garlic Butter Crust<br>
+					<input class="crust" type="radio" name="Crust" value="Spicy"> Spicy Crust<br>
+					<input class="crust" type="radio" name="Crust" value="House"> House Special Crust<br>
+					<input class="crust" type="radio" name="Crust" value="Cheese Stuffed Crust"> Cheese Stuffed Crust<span class="moneyFormat">+$3.00</span>
+					<br><br><br>
+				</div>
+				<!-- /Crust -->
+				<!-- Meats -->
+				<div class="menu right">
+					<h3>Meats</h3>		
+					<p>*1 free meat topping plus $1 extra for every additional topping*</p>
+					<input class="meats" type="checkbox" name="Meat" value="Pepperoni"> Pepperoni<br>
+					<input class="meats" type="checkbox" name="Meat" value="Sausage"> Sausage <br>
+					<input class="meats" type="checkbox" name="Meat" value="Canadian Bacon"> Canadian Bacon<br> 
+					<input class="meats" type="checkbox" name="Meat" value="Ground Beef"> Ground Beef<br>
+					<input class="meats" type="checkbox" name="Meat" value="Anchovy"> Anchovy<br>
+					<input class="meats" type="checkbox" name="Meat" value="Chicken"> Chicken
+					<br><br><br>
+				</div>
+				<!-- /Meats -->
+				<!-- Veggies -->
+				<div class="menu right2">
+					<h3>Veggies</h3>		
+					<p>*1 free veggie topping plus $1 extra for every additional topping*</p>
+					<input class="veggie" type="checkbox" name="Veggie" value="Tomatoes">Tomatoes<br>
+					<input class="veggie" type="checkbox" name="Veggie" value="Onions"> Onions <br>
+					<input class="veggie" type="checkbox" name="Veggie" value="Olives"> Olives<br> 
+					<input class="veggie" type="checkbox" name="Veggie" value="Green Peppers"> Green Peppers<br>
+					<input class="veggie" type="checkbox" name="Veggie" value="Mushrooms">  Mushrooms<br>
+					<input class="veggie" type="checkbox" name="Veggie" value="Pineapple"> Pineapple<br>
+					<input class="veggie" type="checkbox" name="Veggie" value="Spinach">  Spinach<br>
+					<input class="veggie" type="checkbox" name="Veggie" value="Jalapeno"> Jalepeno<br> 
+				</div>
+				<br><br>
+				<!-- /Veggies -->
+				<!-- Price Button -->
+				<input id="btnOrder" type="button" onclick="getReceipt()" value="Place Order">
+				<div id="cart">
+					<div id="showText"></div>
+					<div id="totalPrice"></div>
+				</div>
+				<!-- /Price Button -->
+			</form>
+		</div>
+		<script src="./javascript/pricing.js"></script>
+	</body>
+</html>
